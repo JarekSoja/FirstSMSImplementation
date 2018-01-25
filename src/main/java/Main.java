@@ -9,11 +9,11 @@ import pl.smsapi.exception.SmsapiException;
 public class Main {
     public static void main(String args[]) {
         try {
-            String passwordHash = "03d5a171f7e27b0493a7dd013a6593b2";
+            String passwordHash = "00000000000000000000000000000000000";
             BasicAuthClient client = new BasicAuthClient("jarek.soja@gmail.com", passwordHash);
 
             SmsFactory smsApi = new SmsFactory(client);
-            String phoneNumber = "509241700";
+            String phoneNumber = "111111111";
             SMSSend action = smsApi.actionSend()
                     .setText("Monsz testuje wysylanie smsow przez aplikacje w Javie")
                     .setTo(phoneNumber);
